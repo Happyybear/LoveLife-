@@ -19,7 +19,7 @@
 #define APPKEY @"566cf4ebe0f55a23e5007be9"
 //数据接口
 //首页
-#define HOMEURL @"http://open4.bantangapp.com/recommend/index?client_id=bt_app_android&client_secret=ffcda7a1c4ff338e05c42e7972ba7b8d&page=1&pagesize=20"
+#define HOMEURL @"http://open4.bantangapp.com/recommend/index?client_id=bt_app_android&client_secret=ffcda7a1c4ff338e05c42e7972ba7b8d&page=%d&pagesize=10"
 //首页详情
 #define HOMEDETAIL @"http://open4.bantangapp.com/topic/info?client_id=bt_app_android&client_secret=ffcda7a1c4ff338e05c42e7972ba7b8d&id=%zd"
 //阅读

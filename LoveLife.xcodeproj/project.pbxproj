@@ -705,13 +705,7 @@
 		3CE717221C32276A0081B34C = {
 			isa = PBXGroup;
 			children = (
-				3CF01BD01C33D5C400CDF334 /* libz.tbd */,
-				3CF01BCE1C33D5B500CDF334 /* libstdc++.tbd */,
-				3CF01BCC1C33D5AA00CDF334 /* CoreTelephony.framework */,
-				3CF01BCA1C33D5A200CDF334 /* libsqlite3.tbd */,
-				3CF01BC81C33D59400CDF334 /* CoreGraphics.framework */,
-				3CF01BC61C33D58500CDF334 /* SystemConfiguration.framework */,
-				3CF01BC41C33D54100CDF334 /* Security.framework */,
+				3CF01BD21C33FCCB00CDF334 /* frameWork */,
 				3CE3A98B1C3242030069C7D5 /* frameWork */,
 				3CE7172D1C32276A0081B34C /* LoveLife */,
 				3CE717471C32276A0081B34C /* LoveLifeTests */,
@@ -1561,6 +1555,20 @@
 			path = ReadCell;
 			sourceTree = "<group>";
 		};
+		3CF01BD21C33FCCB00CDF334 /* frameWork */ = {
+			isa = PBXGroup;
+			children = (
+				3CF01BC81C33D59400CDF334 /* CoreGraphics.framework */,
+				3CF01BC61C33D58500CDF334 /* SystemConfiguration.framework */,
+				3CF01BC41C33D54100CDF334 /* Security.framework */,
+				3CF01BCE1C33D5B500CDF334 /* libstdc++.tbd */,
+				3CF01BD01C33D5C400CDF334 /* libz.tbd */,
+				3CF01BCA1C33D5A200CDF334 /* libsqlite3.tbd */,
+				3CF01BCC1C33D5AA00CDF334 /* CoreTelephony.framework */,
+			);
+			name = frameWork;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2048,7 +2056,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/LoveLife/Source/ThirdLibrary/UMShare/TencentOpenAPI",
 				);
-				GCC_PREFIX_HEADER = /Users/King/Desktop/LoveLife/LoveLife/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LoveLife/PrefixHeader.pch";
 				INFOPLIST_FILE = LoveLife/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -2074,7 +2082,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/LoveLife/Source/ThirdLibrary/UMShare/TencentOpenAPI",
 				);
-				GCC_PREFIX_HEADER = /Users/King/Desktop/LoveLife/LoveLife/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LoveLife/PrefixHeader.pch";
 				INFOPLIST_FILE = LoveLife/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
