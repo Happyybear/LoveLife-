@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ReadModel.h"
+@interface ReadRootViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
 
-@interface ReadRootViewController : UIViewController
+@property (nonatomic,retain) UITableView * tableView;
+@property (nonatomic,retain) NSMutableArray * dataArray;
+@property (nonatomic,assign) int page;
+-(void)createRefresh;
+-(void)createUI;
+-(void)getData;
 
 @end

@@ -233,6 +233,8 @@
 		3CF01BCD1C33D5AA00CDF334 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CF01BCC1C33D5AA00CDF334 /* CoreTelephony.framework */; };
 		3CF01BCF1C33D5B500CDF334 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CF01BCE1C33D5B500CDF334 /* libstdc++.tbd */; };
 		3CF01BD11C33D5C400CDF334 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CF01BD01C33D5C400CDF334 /* libz.tbd */; };
+		3CF01BD51C34065300CDF334 /* RecordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF01BD41C34065300CDF334 /* RecordModel.m */; };
+		3CF01BD91C340AF100CDF334 /* RecordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF01BD81C340AF100CDF334 /* RecordCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -607,8 +609,8 @@
 		3CF01BB51C33819E00CDF334 /* RecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordViewController.m; sourceTree = "<group>"; };
 		3CF01BB71C33ADF600CDF334 /* ReadRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadRootViewController.h; sourceTree = "<group>"; };
 		3CF01BB81C33ADF600CDF334 /* ReadRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadRootViewController.m; sourceTree = "<group>"; };
-		3CF01BBA1C33B1C100CDF334 /* ReadModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadModel.h; sourceTree = "<group>"; };
-		3CF01BBB1C33B1C100CDF334 /* ReadModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadModel.m; sourceTree = "<group>"; };
+		3CF01BBA1C33B1C100CDF334 /* ReadModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReadModel.h; path = ../../../Model/HomeModel/ReadModel.h; sourceTree = "<group>"; };
+		3CF01BBB1C33B1C100CDF334 /* ReadModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReadModel.m; path = ../../../Model/HomeModel/ReadModel.m; sourceTree = "<group>"; };
 		3CF01BBE1C33B32B00CDF334 /* ArticalCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticalCell.h; sourceTree = "<group>"; };
 		3CF01BBF1C33B32B00CDF334 /* ArticalCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticalCell.m; sourceTree = "<group>"; };
 		3CF01BC11C33CAC500CDF334 /* ArticalDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticalDetailViewController.h; sourceTree = "<group>"; };
@@ -620,6 +622,10 @@
 		3CF01BCC1C33D5AA00CDF334 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		3CF01BCE1C33D5B500CDF334 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
 		3CF01BD01C33D5C400CDF334 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		3CF01BD31C34065300CDF334 /* RecordModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RecordModel.h; path = ../../../Model/HomeModel/RecordModel.h; sourceTree = "<group>"; };
+		3CF01BD41C34065300CDF334 /* RecordModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RecordModel.m; path = ../../../Model/HomeModel/RecordModel.m; sourceTree = "<group>"; };
+		3CF01BD71C340AF100CDF334 /* RecordCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordCell.h; sourceTree = "<group>"; };
+		3CF01BD81C340AF100CDF334 /* RecordCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -674,8 +680,6 @@
 			children = (
 				3C8D903A1C3276EF0095E81D /* HomeModel.h */,
 				3C8D903B1C3276EF0095E81D /* HomeModel.m */,
-				3CF01BBA1C33B1C100CDF334 /* ReadModel.h */,
-				3CF01BBB1C33B1C100CDF334 /* ReadModel.m */,
 			);
 			path = HomeModel;
 			sourceTree = "<group>";
@@ -1433,6 +1437,7 @@
 		3CE719821C3228FE0081B34C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3CF01BD61C34072500CDF334 /* ReadModel */,
 				3C8D90391C3275330095E81D /* HomeModel */,
 			);
 			path = Model;
@@ -1551,6 +1556,8 @@
 			children = (
 				3CF01BBE1C33B32B00CDF334 /* ArticalCell.h */,
 				3CF01BBF1C33B32B00CDF334 /* ArticalCell.m */,
+				3CF01BD71C340AF100CDF334 /* RecordCell.h */,
+				3CF01BD81C340AF100CDF334 /* RecordCell.m */,
 			);
 			path = ReadCell;
 			sourceTree = "<group>";
@@ -1567,6 +1574,18 @@
 				3CF01BCC1C33D5AA00CDF334 /* CoreTelephony.framework */,
 			);
 			name = frameWork;
+			sourceTree = "<group>";
+		};
+		3CF01BD61C34072500CDF334 /* ReadModel */ = {
+			isa = PBXGroup;
+			children = (
+				3CF01BBA1C33B1C100CDF334 /* ReadModel.h */,
+				3CF01BBB1C33B1C100CDF334 /* ReadModel.m */,
+				3CF01BD31C34065300CDF334 /* RecordModel.h */,
+				3CF01BD41C34065300CDF334 /* RecordModel.m */,
+			);
+			name = ReadModel;
+			path = ../viewController/HomeVC/ReadModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1848,6 +1867,7 @@
 				3C8D90401C32791C0095E81D /* HomeCell.m in Sources */,
 				3CE719A41C32358D0081B34C /* GuideViewPage.m in Sources */,
 				3CE7199D1C3228FE0081B34C /* MusicViewController.m in Sources */,
+				3CF01BD91C340AF100CDF334 /* RecordCell.m in Sources */,
 				3CE7195B1C32278F0081B34C /* CustomViewController.mm in Sources */,
 				3CE7190E1C32278F0081B34C /* AFNetworkReachabilityManager.m in Sources */,
 				3CE7193B1C32278F0081B34C /* SDWebImagePrefetcher.m in Sources */,
@@ -1858,6 +1878,7 @@
 				3CE7195C1C32278F0081B34C /* bitstream.c in Sources */,
 				3CE719411C32278F0081B34C /* UIImageView+WebCache.m in Sources */,
 				3CE7192C1C32278F0081B34C /* MJRefreshNormalHeader.m in Sources */,
+				3CF01BD51C34065300CDF334 /* RecordModel.m in Sources */,
 				3CE719231C32278F0081B34C /* MJRefreshFooter.m in Sources */,
 				3CE719261C32278F0081B34C /* MJRefreshAutoNormalFooter.m in Sources */,
 				3CE719181C32278F0081B34C /* UIViewController+MMDrawerController.m in Sources */,

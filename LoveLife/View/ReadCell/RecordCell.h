@@ -1,5 +1,5 @@
 //
-//  RecordViewController.h
+//  RecordCell.h
 //  LoveLife
 //
 //  Created by 王一成 on 15/12/30.
@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ReadRootViewController.h"
-@interface RecordViewController : ReadRootViewController
+#import "RecordModel.h"
+@interface RecordCell : UITableViewCell
 
+-(void)refreshUI:(RecordModel *)recordModel;
 @end
